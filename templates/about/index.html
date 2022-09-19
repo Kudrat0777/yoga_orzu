@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	<title>О нас</title>
+{% endblock %}
+
+{% block body %}
+	
+	{% include 'about/header_section.html' %}
+
+	{% include 'about/service_section.html' %}
+
+	{% include 'about/what_we_do.html' %}
+
+	{% include 'about/trainer_section.html'%}
+
+	{% include 'about/review_section.html' %}
+
+	{% include 'about/blog_section.html' %}
+
+{% endblock %}
+
+</html>
