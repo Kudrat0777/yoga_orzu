@@ -11,3 +11,7 @@ class AboutPageView(TemplateView):
 
 class ContactPageView(TemplateView):
     template_name = 'contact/index.html'
+
+
+class TrainerPageView(TemplateView):
+    template_name = 'trainers/index.html'
