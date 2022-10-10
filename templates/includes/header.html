@@ -34,6 +34,11 @@
                     </ul>
                 </li> {% endcomment %}
                 <li><a href="{% url 'main:contact_page' %}">Контакты</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'logout' %}">Выход</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Вход</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>

@@ -15,3 +15,7 @@ class ContactPageView(TemplateView):
 
 class TrainerPageView(TemplateView):
     template_name = 'trainers/index.html'
+
+
+class LoginPage(TemplateView):
+    template_name = 'auth/login.html'
