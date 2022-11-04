@@ -10,4 +10,7 @@ urlpatterns = [
     path('trainer/', views.TrainerPageView.as_view(), name='trainer_page'),
 
     path('login/', views.LoginPage.as_view(), name='login'),
+
+    path('instructor/create/', views.InstructorCreateView.as_view(),
+        name='instructor_create'),
 ]

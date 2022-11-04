@@ -10,3 +10,7 @@ class Instructor(models.Model):
         verbose_name = 'Инструктор'
         verbose_name_plural = 'Инструктора'
         db_table = 'instructor'
+
+    def __str__(self) -> str:
+        return self.name
+         
