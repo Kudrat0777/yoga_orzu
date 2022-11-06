@@ -23,6 +23,10 @@ class LoginPage(TemplateView):
     template_name = 'auth/login.html'
 
 
+class AdminProfilePageView(TemplateView):
+    template_name = 'admin/index.html'
+
+
 class InstructorCreateView(CreateView):
     form_class = InstructorForm
     model = Instructor

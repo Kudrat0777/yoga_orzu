@@ -11,6 +11,8 @@ urlpatterns = [
 
     path('login/', views.LoginPage.as_view(), name='login'),
 
+    path('profile/', views.AdminProfilePageView.as_view(), name='profile'),
+
     path('instructor/create/', views.InstructorCreateView.as_view(),
         name='instructor_create'),
 ]

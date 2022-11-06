@@ -1,0 +1,23 @@
+{% load static %}
+<header class="header-section">
+    <div class="header-bottom">
+        <a href="index.html" class="site-logo">
+            <img src="{% static 'img/logo.png' %}" alt="">
+        </a>
+        <div class="container">
+            <ul class="main-menu">
+                <li><a href='#'>Редактировать</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Инструктор</a></li>
+                        <li><a href="#">Программы</a></li>
+                    </ul>
+                </li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'logout' %}">Выход</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Вход</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</header>
