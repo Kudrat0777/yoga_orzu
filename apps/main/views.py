@@ -30,7 +30,7 @@ class AdminProfilePageView(TemplateView):
 class InstructorCreateView(CreateView):
     form_class = InstructorForm
     model = Instructor
-    template_name = 'create/create_instructor.html'
+    template_name = 'create/instructor/create_instructor.html'
 
     def get_success_url(self) -> str:
         return reverse('main:instructor_create')
